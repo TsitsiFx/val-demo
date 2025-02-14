@@ -74,10 +74,34 @@ body {
   padding-left: 10px;
   border-bottom: 3px solid #FF6087;
 }
+
 .home p {
   /* line-height: 30px; */
   /* text-decoration: underline; */
+  animation: fade 15s infinite;
 }
+
+@keyframes fade {
+0%, 50% {
+  opacity: 0;
+  color: red;
+}
+25% {
+  opacity: 1;
+  color:red;
+  font-weight: bold;
+}
+50% {
+  opacity: 0;
+  color:red;
+}
+75% {
+  opacity: 0;
+  color:red;
+  font-weight: bold;
+}
+}
+
 small {
   font-size: 20px;
 }
@@ -95,7 +119,7 @@ small {
 }
 
 .pg-text-container {
-  height: 80vh;
+height: 80vh;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -153,10 +177,12 @@ color: #EC002D;
   border-bottom-right-radius: 80px;
   opacity: 0.9;
 }
+
 .list:hover {
   opacity: 0.77;
   cursor: pointer;
 }
+
 .list small {
   font-size: 15px;
   font-weight: 500;
@@ -177,15 +203,18 @@ li:hover {
   /* border-bottom: 15px solid #FF6087; */
 
 }
+
 .divider h1 {
   color: #EBEAEA;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
 }
+
 .divider small {
   color: #EBEAEA;
   text-align: center;
 }
+
 .section-2 {
   background-image: url(./images/sect-bg-4.jpg);
   background-size: cover;
@@ -194,6 +223,7 @@ li:hover {
   height: 100vh;
   width: 100%;
 }
+
 .hold-space {
   display: flex;
   flex-direction: column;
@@ -201,15 +231,19 @@ li:hover {
   justify-content: center;
   gap: 5px;
 }
+
 .section-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
+
 .hold-space p {
   font-size: 15px;
+  animation: fade 7s infinite;
 }
+
 footer {
   /* background-image: linear-gradient(90deg, rgba(212,174,181,1) 0%, rgba(218,119,119,0.5382528011204482) 58%, rgba(230,185,201,0.9780287114845938) 100%); url(./images/sect-bg-9.jpg); */
   background-color: #EBEAEA;
@@ -224,6 +258,7 @@ footer {
   justify-content:space-evenly;
   align-items: center;
 }
+
 .register {
   display: flex;
   flex-direction: row;
@@ -231,6 +266,7 @@ footer {
   align-items: center;
   gap: 40px;
 }
+
 .faq {
   display: flex;
   flex-direction: row;
@@ -238,6 +274,7 @@ footer {
   align-items: center;
   gap: 10px;
 }
+
 .faq div {
   display: flex;
   flex-direction: column;
@@ -245,6 +282,7 @@ footer {
   align-items: start;
   gap: 10px;
 }
+
 .socials {
   display: flex;
   flex-direction: row;
